@@ -1,6 +1,8 @@
 # VFIO Config
 #### Configs, thoughts, and troubleshooting steps
 
+![Image of VFIO Setup](vfio.png)
+
 ### Introduction
 VFIO oftens brings to mind a image of Windows applications working side by side with Linux apps with no performance costs. In fact, the journety of VFIO is more like a treacherous path that once you reach the end, leads to a slightly less butterfly and rainbows oasis then one might think. Still, VFIO is one of the most promising technologies for windows emulation, which paints a bright future for Linux compatibility. This repository aims to help others along their journey and provide a resource for those that might experience similar problems. 
 
@@ -53,9 +55,9 @@ Using dedicated drives in a vm is a two part process. First, the drives must be 
 ...
   <disk type='block' device='disk'>
     <driver name='qemu' type='raw' cache='none' io='native'/>
-    <source dev='/dev/sdXX'/>
-    <target dev='vda' bus='virtio'/>
-    <address type='pci' domain='0x0000' bus='0x02' slot='0x0a' function='0x0'/>
+    <source dev='/dev/sdc2'/>
+    <target dev='sda' bus='scsi'/>
+    <address type='drive' controller='0' bus='0' target='0' unit='0'/>
   </disk>
 ...
 </devices>
