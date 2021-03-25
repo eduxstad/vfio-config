@@ -4,7 +4,7 @@
 ![Image of VFIO Setup](vfio.png)
 
 ### Introduction
-VFIO oftens brings to mind a image of Windows applications working side by side with Linux apps with no performance costs. In fact, the journety of VFIO is more like a treacherous path that once you reach the end, leads to a slightly less butterfly and rainbows oasis then one might think. Still, VFIO is one of the most promising technologies for windows emulation, which paints a bright future for Linux compatibility. This repository aims to help others along their journey and provide a resource for those that might experience similar problems. 
+VFIO oftens brings to mind an image of Windows applications working side by side with Linux apps with no performance costs. In fact, the journety of VFIO is more like a treacherous path that once you reach the end, leads to a slightly less butterfly and rainbows oasis then one might think. Still, VFIO is one of the most promising technologies for windows emulation, which paints a bright future for Linux compatibility. This repository aims to help others along their journey and provide a resource for those that might experience similar problems. 
 
 ### Overview
 This setup was created using the ['PCI passthrough via OVMF'](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF) page on the Arch Linux wiki, of course using the latest version of Arch Linux. That page will most likely be more up-to-date than this repository, and it is recommended to use it as a primary resource. Parts were also configured using the [VFIO Increments](https://passthroughpo.st/vfio-increments/) page. Libvirt and virt-manager were used to configure the VM, with manual editing of with the virsh command. Vfio-pci was used to isolate the GPU. 
