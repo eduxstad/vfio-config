@@ -12,7 +12,7 @@ This setup was created using the ['PCI passthrough via OVMF'](https://wiki.archl
 ### System Specs
 * **Motherboard:** ASUS Prime B350-PLUS
 * **CPU:** Ryzen 2600X @ 3.7 GHZ
-* **RAM:** 2 x 8GB (16GB) @ 3000 HZ
+* **RAM:** 2 x 8GB (16GB) @ 3000 MHZ
 * **GPU1 (Guest):** MSI 390 8GB @ Stock
 * **GPU2 (Host):** XFX 550 4GB @ Stock
 * **Storage:** 2 x 250GB Intel SSD, 1 x 1TB Seagate HHD†*
